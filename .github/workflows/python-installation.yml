@@ -12,7 +12,7 @@ jobs:
           - os: macos-14
           - py-version: 3.12
           
-    runs-on: ${{ matrix.image }}
+    runs-on: ${{ matrix.os }}
     
     steps:
     - name: Set up Python
@@ -20,6 +20,7 @@ jobs:
       with:
         python-version: ${{ matrix.py-version }}
         
+
 
 
 
